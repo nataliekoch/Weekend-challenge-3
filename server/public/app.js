@@ -35,18 +35,9 @@ function getInputNumber(){
 
    $("#inputField").find("input[type=text]").val("");
 
-   appendInputInfo();
-
    callAjax();
    $("#clearForm").show();
 }
-
-function appendInputInfo(){
-   $("#showEquation").append("<p>First Number: " + inputObject.firstNumber + "</p>");
-   $("#showEquation").append("<p>Second Number: " + inputObject.secondNumber + "</p>");
-   $("#showEquation").append("<p>Mathematical Operation: " + inputObject.type + "</p>");
-}
-
 
 function callAjax(){
    $.ajax({
