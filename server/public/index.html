@@ -9,26 +9,28 @@
 </head>
 <body>
 
-    <div>
-        <div class="mathSymbols">
+    <div class="math-symbols">
+        <div class="math-buttons">
             <h4 >Please choose mathmatical operation:</h4>
-            <button id="add" data-toggle="button">+</button>
-            <button id="subtract" data-toggle="button">-</button>
-            <button id="multiply" data-toggle="button">x</button>
-            <button id="divide" data-toggle="button">&divide;</button>
+            <button id="add" class="math-button" data-toggle="button">+</button>
+            <button id="subtract" class="math-button" data-toggle="button">-</button>
+            <button id="multiply" class="math-button" data-toggle="button">x</button>
+            <button id="divide" class="math-button" data-toggle="button">&divide;</button>
         </div>
     </div>
 
     <div>
-        <form>
+        <form id="inputField">
             First Number<br>
-            <input type="text" id="firstNumber" placeholder="input first number"> <br>
+            <input type="text" id="firstNumber" name="firstNumber" placeholder="input first number"> <br>
             Second Number<br>
-            <input type="text" id="SecondNumber" placeholder="input second number">
-            <input type="submit" value="calculate">
+            <input type="text" id="secondNumber" name="secondNumber" placeholder="input second number">
+            <input id="submitButton" type="submit" value="calculate">
             <button id="clearForm" data-toggle="button">Clear all fields</button>
         </form>
     </div>
+
+    <div id="showEquation"></div>
 
     <div id="showResults"></div>
 

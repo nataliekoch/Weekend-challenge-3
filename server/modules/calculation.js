@@ -1,7 +1,23 @@
-/**
- * Created by natalie on 11/1/15.
- */
-var calculation = function(input){
+var calculate = function(object){
 
-    if()
+    var result;
+    switch(object.type) {
+        case "addition":
+            result = Number(object.firstNumber) + Number(object.secondNumber);
+            break;
+        case "subtraction":
+            result = Number(object.firstNumber) - Number(object.secondNumber);
+            break;
+        case "multiplication":
+            result = Number(object.firstNumber) * Number(object.secondNumber);
+            break;
+        case "division":
+        default:
+            result = Number(object.firstNumber) / Number(object.secondNumber);
+            break;
+    }
+
+    return result;
 }
+
+module.exports = calculate;

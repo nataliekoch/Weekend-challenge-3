@@ -5,7 +5,7 @@ var express = require('express');
 var router = express.Router();
 var path = require('path');
 
-//var calculate = require("../modules/calculations");
+var calculate = require("../modules/calculation");
 
 router.post("/data", function(req,res){
     res.send({result: calculate(req.body)});
